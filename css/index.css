@@ -1,0 +1,381 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 2rem 2%;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* ------------------------- */
+
+.left-element{
+    display: flex;
+    gap: 4.5rem;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.nav-items ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-items ul li span{
+    margin-right: .3rem;
+}
+
+.logo{
+    padding-left: 2rem;
+}
+
+/* --------------------- */
+
+.right-elements{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+#select{
+    padding: 4px 8px;
+    border-radius: 5px;
+    background: white;
+}
+
+.login button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #83AFAF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* banner  */
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 334px;
+    background: #1d3559;
+    gap: 2rem;
+    margin-top: 1.7rem;
+}
+
+.text{
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #f0faef;
+    max-width: 681px;
+}
+
+
+  
+  .search-container {
+    position: relative;
+    width: 712px;
+    height: 50px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: black; /* Couleur de la loupe */
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 10px 10px 35px; /* Décalage pour l'icône */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+
+/* job section */
+
+.job-listings {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.job-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Required for relative positioning */
+}
+
+
+.job-card:hover {
+    background-color: #8cf2d5;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ddd;
+    position: relative; /* Allows for movement on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.job-info {
+    flex-grow: 1;
+    margin-left: 1rem;
+    
+}
+
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    background: #83AFAF;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    color: #e7ebea;
+    font-size: 0.9rem;
+    position: relative; /* Enables hover movement */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    
+}
+
+.tag.tag-green {
+    background: #a3f1c9; /* Green color */
+}
+
+.tag i {
+    margin-right: 0.4rem;
+}
+
+.apply-btn {
+    align-items: center;
+    display: none; /* Initially hide the apply button */
+    background: #E74C3C;
+ padding: 0.3rem 0.8rem; /* Reduced padding for smaller size */
+    font-size: 0.85rem; /* Smaller font size */
+    border-radius: 3px; /* Slightly smaller border radius */
+    margin-right: 1rem;
+    text-decoration: none;
+    transition: all 0.9s ease; /* Smooth transition for hover effects */
+
+    }
+/* 
+    .apply button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #83AFAF;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 700;
+    } */
+
+.job-card:hover .apply-btn {
+    display: inline-block; /* Show the apply button when the card is hovered */
+}
+
+.job-card:hover .company-logo {
+    top: 5px; /* Shift the logo downward */
+    right: -5px
+}
+
+.job-card:hover .tag {
+    top: 5px; /* Shift the tags downward */
+    left: -5px; /* Shift the tags toward the logo */
+}
+
+.semester-badge {
+    background: #E74C3C;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+/* contact */
+
+.contact{
+    background: #1d3559;
+    width: 100%;
+    height: 508px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+
+}
+
+
+.text-contact{
+    font-weight: 700;
+    font-size: 48px;
+    color: #f0faef;
+    max-width: 459px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 544px;
+    background: white;
+    gap: 3rem;
+    border-radius: 5px;
+    padding: 40px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form div input{
+    max-width: 464px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px #e0e2e5 solid;
+    padding: 12px 20px;
+    color: #d6d6d6;
+}
+
+
+form h2{
+    font-weight: 500;
+    font-size: 36px;
+    color: #1d3559;
+}
+
+form button{
+    display: inline;
+    width: 114px;
+    border-radius: 8px;
+    padding: 10px 26px;
+    background: #e53945;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+}
+
+
+  
+
+  /* footer */
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 32px 8%;
+    background: #f0faef;
+  }
+
+  .nav{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* dropdown */
+
+  
+  .language-selector {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    width: 153px;
+    height: 40px;
+    gap: 15px;
+  }
+  
+  .language-selector .icon {
+    font-size: 20px;
+    /* margin-right: 10px; */
+    color: black; /* Icône noire */
+  }
+  
+  .dropdown {
+    position: relative;
+    flex: 1;
+  }
+  
+  .selected-language {
+    font-size: 16px;
+  }
+  
+  .dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 10;
+  }
+  
+  .option {
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .option:hover {
+    background-color: #f0f0f0;
+  }
